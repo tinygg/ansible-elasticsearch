@@ -1,0 +1,26 @@
+---
+dependencies:
+  - geerlingguy.java
+
+galaxy_info:
+  author: tinygg
+  description: ansible role elasticsearch (cluster && standalone)
+  company: "NONE"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - lucene
+    - es
+    - cluster
+    - standalone
+    - elasticsearch

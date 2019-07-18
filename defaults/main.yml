@@ -1,0 +1,17 @@
+---
+elasticsearch_version: '6.x'
+elasticsearch_package_state: present
+es_rpm_url: "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-{{ elasticsearch_version }}.rpm"
+
+elasticsearch_service_state: started
+elasticsearch_service_enabled: true
+
+elasticsearch_network_host: "0.0.0.0"
+elasticsearch_http_port: 9200
+es_jvm_custom_parameters: ""
+es_heap_size: "8g"
+es_cluster_name: "elasticsearch"
+es_node_name: "node-1"
+es_cluster_hosts: "{{ elasticsearch_network_host }}"
+es_data_dir: "/var/lib/elasticsearch"
+es_log_dir: "/var/log/elasticsearch"
